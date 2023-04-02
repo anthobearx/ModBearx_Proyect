@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "modbearx",
+  "version": "${version}",
+
+  "name": "Mod-bearx",
+  "description": "El segundo mod de pruebas de anthobearx",
+  "authors": [
+    "AnthoBearx"
+  ],
+  "contact": {
+    "homepage": "https://twitter.com/anthobearx",
+    "sources": "https://github.com/anthobearx/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.anthobearx.modbearx.ModBearx"
+    ],
+    "client": [
+      "net.anthobearx.modbearx.ModBearxCliente"
+    ]
+  },
+  "mixins": [
+    "modbearx.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.17",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
